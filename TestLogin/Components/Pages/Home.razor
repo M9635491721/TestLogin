@@ -1,0 +1,21 @@
+﻿@page "/"
+@using TestLogin.Functions
+
+@inject NavigationManager NavigationManager
+@inject LoggedUser us
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, @us.Name</h1>
+
+Welcome to your new app.
+
+@code {
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender && !us.IsLoggedin)
+        {
+            NavigationManager.NavigateTo("/login");
+        }
+    }
+}
