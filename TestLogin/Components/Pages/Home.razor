@@ -6,10 +6,26 @@
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, @us.Name</h1>
+<main class="main">
 
-Welcome to your new app.
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
 
+        <img src="assets/img/hero-bg-1.jpg" alt="" data-aos="fade-in">
+
+        <div class="container text-center" data-aos="zoom-out" data-aos-delay="100">
+            <div class="row justify-content-start">
+                <div class="col-lg-8">
+                    <h2 style="color:#108b06 !important">Kamruddin Ahammed</h2>
+                    <p style="color:#108b06 !important">I'm a software Developer pursuing Diploma in Computer Science</p>
+                    <a href="about.html" class="btn-get-started">About Me</a>
+                </div>
+            </div>
+        </div>
+
+    </section><!-- /Hero Section -->
+
+</main>
 @code {
     protected override void OnAfterRender(bool firstRender)
     {
